@@ -10,14 +10,14 @@ int main(int argc, char *argv[]) {
     gst_init(&argc, &argv);
 
     // Create the elements
-    videosrc = gst_element_factory_make("videotestsrc", "videosrc");
-    vertigotv = gst_element_factory_make("vertigotv", "vertigotv");
+    videosrc = gst_element_factory_make("videotestsrc", "video_src");
+    vertigotv = gst_element_factory_make("vertigotv", "filter_effect");
     autovideosink = gst_element_factory_make("autovideosink", "display_window");
 
     // Create empty pipeline
     pipeline = gst_pipeline_new("test-pipeline");
 
-    if (!pipeline || !videosrc || !autovideosink) {
+    if (!pipeline || !videosrc || !vertigotv || !autovideosink) {
         g_printerr("Not all elements could be created.\n");
         return -1;
     }
