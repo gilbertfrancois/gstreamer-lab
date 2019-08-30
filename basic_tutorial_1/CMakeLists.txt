@@ -1,10 +1,6 @@
 cmake_minimum_required(VERSION 3.10)
-project(runme)
-
-set(CMAKE_CXX_STANDARD 14)
 
 find_package(PkgConfig)
-set(ENV{PKG_CONFIG_PATH} "/usr/local/opt/libffi/lib/pkgconfig")
 pkg_check_modules(FFI REQUIRED libffi)
 pkg_check_modules(GST REQUIRED gstreamer-1.0)
 
@@ -15,6 +11,6 @@ link_directories(
 
 set(LIBRARIES ${GST_LIBRARIES})
 
-add_executable(runme main.c)
-target_link_libraries(runme ${LIBRARIES})
-target_compile_options(runme PUBLIC ${GST_CFLAGS_OTHER})
+add_executable(runme_1 main.c)
+target_link_libraries(runme_1 ${LIBRARIES})
+target_compile_options(runme_1 PUBLIC ${GST_CFLAGS_OTHER})
