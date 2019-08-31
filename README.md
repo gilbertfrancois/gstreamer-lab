@@ -6,7 +6,19 @@ This repository contains some small tests, closely following the tutorials from 
 
 ### Ubuntu
 
-Install the packages `libgstreamer1.0` and `libgstreamer1.0-dev`. GStreamer has tons of plugins. Search with `apt search gstreamer1.0-*` and 
+```bash
+sudo apt install \
+    libssl1.0.0 \
+    libgstreamer1.0-0 \
+    gstreamer1.0-tools \
+    gstreamer1.0-plugins-good \
+    gstreamer1.0-plugins-bad \
+    gstreamer1.0-plugins-ugly \
+    gstreamer1.0-libav \
+    libgstrtspserver-1.0-0 \
+    libjansson4=2.11-1
+```
+GStreamer has tons of plugins. Search with `apt search gstreamer1.0-*` and 
 install the plugins that you need.
 
 ### macOS
