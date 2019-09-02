@@ -3,3 +3,5 @@ build
 .DSStore
 cmake-build-*
 .idea
+/3rdparty
+/models

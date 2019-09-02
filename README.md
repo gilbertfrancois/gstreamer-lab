@@ -8,6 +8,7 @@ This repository contains some small tests, closely following the tutorials from 
 
 ```bash
 sudo apt install \
+    cmake \
     libssl1.0.0 \
     libgstreamer1.0-0 \
     gstreamer1.0-tools \
@@ -23,7 +24,7 @@ install the plugins that you need.
 
 ### macOS
 
-You can install gstreamer with *homebrew* or as direct download from the gstreamer homepage.
+You can install cmake and gstreamer with *homebrew* or as direct download from the gstreamer homepage.
 At the time of writing, the code does not work on macOS with the homebrew version of GStreamer. Although compiling
 works without errors, running the program results in an `illegal instruction: 4`.
 
