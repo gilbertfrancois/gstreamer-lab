@@ -23,7 +23,13 @@ install the plugins that you need.
 
 ### macOS
 
-You can install gstreamer with *homebrew* or as direct download from the gstreamer homepage.
+Download and install the following packages from the gstreamer homepage:
+
+[gstreamer-1.0-1.15.2-x86_64.pkg](https://gstreamer.freedesktop.org/data/pkg/osx/1.15.2/gstreamer-1.0-1.15.2-x86_64.pkg)
+[gstreamer-1.0-devel-1.15.2-x86_64.pkg](https://gstreamer.freedesktop.org/data/pkg/osx/1.15.2/gstreamer-1.0-devel-1.15.2-x86_64.pkg)
+
+[gstreamer-1.0-1.15.2-x86_64-packages.dmg](https://gstreamer.freedesktop.org/data/pkg/osx/1.15.2/gstreamer-1.0-1.15.2-x86_64-packages.dmg)
+
 At the time of writing, the code does not work on macOS with the homebrew version of GStreamer. Although compiling
 works without errors, running the program results in an `illegal instruction: 4`.
 
