@@ -8,6 +8,7 @@ This repository contains some small tests, closely following the tutorials from 
 
 ```bash
 sudo apt install \
+    cmake \
     libssl1.0.0 \
     libgstreamer1.0-0 \
     gstreamer1.0-tools \
