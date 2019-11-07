@@ -13,7 +13,8 @@ $ sudo apt install \
     gstreamer1.0-plugins-ugly \
     gstreamer1.0-libav \
     libgstrtspserver-1.0-0 \
-    libjansson4=2.11-1
+    libjansson4=2.11-1 \
+    ubuntu-restricted-extras
 
 echo "-- Downloading test data"
 

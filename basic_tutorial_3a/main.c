@@ -6,6 +6,7 @@ typedef struct _CustomData {
   GstElement *qtdemux;
   GstElement *h264parse;
   GstElement *avdec_h264;
+  GstElement *videoconvert;
   GstElement *videosink;
 } CustomData;
 
@@ -27,13 +28,14 @@ int main(int argc, char *argv[]) {
   data.qtdemux = gst_element_factory_make("qtdemux", "qtdemux");
   data.h264parse = gst_element_factory_make("h264parse", "h264parse");
   data.avdec_h264 = gst_element_factory_make("avdec_h264", "avdec_h264");
+  data.videoconvert = gst_element_factory_make("videoconvert", "videoconvert");
   data.videosink = gst_element_factory_make("autovideosink", "videosink");
 
   // Create empty pipeline
   data.pipeline = gst_pipeline_new("test-pipeline");
 
   if (!data.pipeline || !data.source || !data.h264parse || !data.avdec_h264 ||
-      !data.videosink) {
+      !data.videoconvert || !data.videosink) {
     g_printerr("Not all elements could be created.\n");
     return -1;
   }
@@ -44,6 +46,7 @@ int main(int argc, char *argv[]) {
   gst_bin_add(GST_BIN(data.pipeline), data.qtdemux);
   gst_bin_add(GST_BIN(data.pipeline), data.h264parse);
   gst_bin_add(GST_BIN(data.pipeline), data.avdec_h264);
+  gst_bin_add(GST_BIN(data.pipeline), data.videoconvert);
   gst_bin_add(GST_BIN(data.pipeline), data.videosink);
 
   if (!gst_element_link(data.source, data.qtdemux)) {

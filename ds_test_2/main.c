@@ -61,12 +61,10 @@ static GstPadProbeReturn osd_sink_pad_buffer_probe(GstPad* pad,
 
     NvDsBatchMeta* batch_meta = gst_buffer_get_nvds_batch_meta(buf);
 
-    for (l_frame = batch_meta->frame_meta_list; l_frame != NULL;
-         l_frame = l_frame->next) {
+    for (l_frame = batch_meta->frame_meta_list; l_frame != NULL; l_frame = l_frame->next) {
         NvDsFrameMeta* frame_meta = (NvDsFrameMeta*)(l_frame->data);
         int offset = 0;
-        for (l_obj = frame_meta->obj_meta_list; l_obj != NULL;
-             l_obj = l_obj->next) {
+        for (l_obj = frame_meta->obj_meta_list; l_obj != NULL; l_obj = l_obj->next) {
             obj_meta = (NvDsObjectMeta*)(l_obj->data);
             if (obj_meta->class_id == PGIE_CLASS_ID_VEHICLE) {
                 vehicle_count++;

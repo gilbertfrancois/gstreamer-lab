@@ -1,0 +1,77 @@
+[
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I/usr/include/gstreamer-1.0",
+            "-I/usr/include/glib-2.0",
+            "-I/usr/lib/x86_64-linux-gnu/glib-2.0/include",
+            "-pthread",
+            "-o",
+            "CMakeFiles/runme_1.dir/main.c.o",
+            "../../basic_tutorial_1/main.c"
+        ],
+        "directory": "/media/psf/Home/Development/git/gstreamer-lab/build_linux/basic_tutorial_1",
+        "file": "../../basic_tutorial_1/main.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I/usr/include/gstreamer-1.0",
+            "-I/usr/include/glib-2.0",
+            "-I/usr/lib/x86_64-linux-gnu/glib-2.0/include",
+            "-pthread",
+            "-o",
+            "CMakeFiles/runme_2a.dir/main.c.o",
+            "../../basic_tutorial_2a/main.c"
+        ],
+        "directory": "/media/psf/Home/Development/git/gstreamer-lab/build_linux/basic_tutorial_2a",
+        "file": "../../basic_tutorial_2a/main.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I/usr/include/gstreamer-1.0",
+            "-I/usr/include/glib-2.0",
+            "-I/usr/lib/x86_64-linux-gnu/glib-2.0/include",
+            "-pthread",
+            "-o",
+            "CMakeFiles/runme_3a.dir/main.c.o",
+            "../../basic_tutorial_3a/main.c"
+        ],
+        "directory": "/media/psf/Home/Development/git/gstreamer-lab/build_linux/basic_tutorial_3a",
+        "file": "../../basic_tutorial_3a/main.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I/usr/include/gstreamer-1.0",
+            "-I/usr/include/glib-2.0",
+            "-I/usr/lib/x86_64-linux-gnu/glib-2.0/include",
+            "-pthread",
+            "-o",
+            "CMakeFiles/runme_2.dir/main.c.o",
+            "../../basic_tutorial_2/main.c"
+        ],
+        "directory": "/media/psf/Home/Development/git/gstreamer-lab/build_linux/basic_tutorial_2",
+        "file": "../../basic_tutorial_2/main.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I/usr/include/gstreamer-1.0",
+            "-I/usr/include/glib-2.0",
+            "-I/usr/lib/x86_64-linux-gnu/glib-2.0/include",
+            "-pthread",
+            "-o",
+            "CMakeFiles/runme_3.dir/main.c.o",
+            "../../basic_tutorial_3/main.c"
+        ],
+        "directory": "/media/psf/Home/Development/git/gstreamer-lab/build_linux/basic_tutorial_3",
+        "file": "../../basic_tutorial_3/main.c"
+    }
+]

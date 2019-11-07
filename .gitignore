@@ -2,6 +2,7 @@ build
 *.o
 .DSStore
 cmake-build-*
+build*
 .idea
 /models
 /3rdparty/deepstream_sdk_v4.0
