@@ -27,3 +27,5 @@ add_subdirectory(basic_tutorial_2)
 add_subdirectory(basic_tutorial_2a)
 add_subdirectory(basic_tutorial_3)
 add_subdirectory(basic_tutorial_3a)
+add_subdirectory(basic_tutorial_4)
+
