@@ -46,8 +46,8 @@ int main(int argc, char *argv[]) {
     videosrc = gst_element_factory_make("videotestsrc", "video_src");
     vertigotv = gst_element_factory_make("vertigotv", "filter_effect");
     videoconvert = gst_element_factory_make("videoconvert", "videoconvert");
-    /* videosink = gst_element_factory_make("osxvideosink", "display_window"); */
     /* videosink = gst_element_factory_make("autovideosink", "display_window"); */
+    /* videosink = gst_element_factory_make("osxvideosink", "display_window"); */
     /* videosink = gst_element_factory_make("xvimagesink", "display_window"); */
     videosink = gst_element_factory_make("glimagesink", "display_window");
 
@@ -87,8 +87,7 @@ int main(int argc, char *argv[]) {
     // Wait until error or EOS
     bus = gst_element_get_bus(pipeline);
     msg = gst_bus_timed_pop_filtered(bus, GST_CLOCK_TIME_NONE, (GstMessageType) (GST_MESSAGE_EOS | GST_MESSAGE_ERROR));
-//    msg = gst_bus_timed_pop_filtered(bus, GST_CLOCK_TIME_NONE, GST_MESSAGE_EOS);
-//
+
     // Parse the message
     if (msg != NULL) {
         GError *err;
