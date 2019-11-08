@@ -1,0 +1,8 @@
+This is the example of the GStreamer video plugin that uses GstVideoFilter
+and GstVideoFrame, implementing gst_my_video_transform_frame_ip.
+
+It acquires the size of the video input, bytes per pixel and bytes per line,
+prints this data and then draws the hair cross moving right and down as the
+frames advance.
+
+The skeleton for the plugin has been generated.

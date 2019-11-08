@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.10)
-project(basic_tutorial_4)
+project(plugin_tutorial_1_simple_pass)
 find_package(PkgConfig)
 
 pkg_check_modules(GSTREAMER REQUIRED gstreamer-1.0)
