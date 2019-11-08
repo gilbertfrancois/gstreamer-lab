@@ -1,0 +1,3 @@
+This example shows the simple plugin that pipes input to the output. It prints the message as it does.
+
+The skeleton for the plugin has been generated.
