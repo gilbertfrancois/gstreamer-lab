@@ -1,3 +1,7 @@
-This example shows the simple plugin that pipes input to the output. It prints the message as it does.
+This example shows the simple plugin that pipes input to the output,
+implementing gst_my_filter_chain.
+
+It prints the message as it does. To do something interesting, it
+measures the frame rate.
 
 The skeleton for the plugin has been generated.

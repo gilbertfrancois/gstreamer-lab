@@ -15,8 +15,7 @@ typedef struct _GstMyVideo GstMyVideo;
 typedef struct _GstMyVideoClass GstMyVideoClass;
 
 struct _GstMyVideo {
-  GstElement element;
-  GstPad *sinkpad, *srcpad;
+  GstVideoFilter element;
   gboolean silent;
   int count; // Global frame counter
   int probe; // Counter to compute FPS, reset every 16 frames.
@@ -24,7 +23,7 @@ struct _GstMyVideo {
 };
 
 struct _GstMyVideoClass {
-  GstElementClass parent_class;
+  GstVideoFilterClass parent_class;
 };
 
 GType gst_my_video_get_type(void);
@@ -33,6 +32,20 @@ GType gst_my_video_get_type(void);
 enum {
   PROP_SILENT = 1 // zero not allowed
 };
+
+/* We still measure FPS */
+static double measure_fps(GstMyVideo *filter, guint count);
+
+/* Various functions of the filter we provide */
+static void gst_my_video_set_property(GObject *object, guint prop_id,
+                                      const GValue *value, GParamSpec *pspec);
+
+static void gst_my_video_get_property(GObject *object, guint prop_id,
+                                      GValue *value, GParamSpec *pspec);
+
+GST_DEBUG_CATEGORY_STATIC (gst_my_video_debug);
+
+G_DEFINE_TYPE (GstMyVideo, gst_my_video, GST_TYPE_VIDEO_FILTER);
 
 G_END_DECLS
 

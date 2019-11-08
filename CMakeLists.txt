@@ -28,5 +28,5 @@ add_subdirectory(basic_tutorial_2a)
 add_subdirectory(basic_tutorial_3)
 add_subdirectory(basic_tutorial_3a)
 add_subdirectory(plugin_tutorial_1_simple_pass)
-add_subdirectory(plugin_tutorial_2_video)
+add_subdirectory(plugin_tutorial_2_video_cross_painter)
 
