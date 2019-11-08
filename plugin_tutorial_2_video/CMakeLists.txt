@@ -21,7 +21,7 @@ link_libraries(
         ${GSTREAMER-APP_LIBRARIES}
 )
 # The main executable to run.
-add_executable(runtime_5 main.cpp)
+add_executable(runtime_video_1 main.cpp)
 
 # The plugin .so library that will be loaded by the main executable.
 add_library(myvideo SHARED gst-plugin/src/gstmyvideo.c)

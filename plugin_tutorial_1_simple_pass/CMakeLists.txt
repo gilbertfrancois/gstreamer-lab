@@ -21,7 +21,7 @@ link_libraries(
         ${GSTREAMER-APP_LIBRARIES}
 )
 # The main executable to run.
-add_executable(runtime_4 main.cpp)
+add_executable(runtime_myfilter main.cpp)
 
 # The plugin .so library that will be loaded by the main executable.
 add_library(myfilter SHARED gst-plugin/src/gstmyfilter.c)

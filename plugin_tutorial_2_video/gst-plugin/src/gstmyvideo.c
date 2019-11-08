@@ -3,7 +3,10 @@
 #include "gstmyvideo.h"
 #include <sys/time.h>
 
-/* The sink pad that can sink anything.*/
+/* Here we define our expected video format, somewhat on voluntary basis.
+ * In production, we probably should use something that needs not be converted. */
+
+/* The sink pad that expects our video format.*/
 static GstStaticPadTemplate sink_factory = GST_STATIC_PAD_TEMPLATE ("sink",
   GST_PAD_SINK, GST_PAD_ALWAYS,GST_STATIC_CAPS("ANY")
 );
