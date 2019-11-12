@@ -1,0 +1,4 @@
+This tutorial connects NVIDIA deep stream application with our plugin. Plugin now can capture TensorRT metadata
+and use the same image format as NVInfer is using (so no conversion).
+
+This example needs the
